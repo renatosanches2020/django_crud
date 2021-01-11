@@ -14,7 +14,7 @@
         {% for person in persons %}
 
             <li>
-                {{ person.first_name }}
+                <a href="{% url 'persons_update' person.id %}">{{ person.first_name }}</a>
 
             </li>
 
